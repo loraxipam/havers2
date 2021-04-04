@@ -24,7 +24,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: -22.55, Lon: -43.12}, // Rio de Janeiro, Brazil
 		havers2.Coord{Lat: 13.45, Lon: 100.28},  // Bangkok, Thailand
-		9956,
+		9958,
 		16026,
 		2.515463,
 		"Rio to Bangkok",
@@ -32,7 +32,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: -20.10, Lon: 57.30}, // Port Louis, Mauritius
 		havers2.Coord{Lat: 0.57, Lon: 100.21},  // Padang, Indonesia
-		3233,
+		3234,
 		5205,
 		0.817067,
 		"Mauritius to Indonesia",
@@ -49,7 +49,7 @@ var tests = []struct {
 		// These are antipodes
 		havers2.Coord{Lat: 32.30, Lon: -64.77},  // Bermuda
 		havers2.Coord{Lat: -32.30, Lon: 115.23}, // Perth, Australia
-		12434,   // earthRadiusMi * pi
+		12436,   // earthRadiusMi * pi
 		20015,   // earthRadiusKm * pi
 		3.14159, // pi
 		"Bermuda to Perth",
@@ -57,7 +57,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: -22.34, Lon: 17.05}, // Windhoek, Namibia
 		havers2.Coord{Lat: 51.56, Lon: 4.29},   // Rotterdam, Netherlands
-		5163,
+		5164,
 		8311,
 		1.304548,
 		"Namibia to the Netherlands",
@@ -65,7 +65,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: -63.24, Lon: -56.59}, // Esperanza, Argentina
 		havers2.Coord{Lat: -8.50, Lon: 13.14},   // Luanda, Angola
-		5068,
+		5069,
 		8157,
 		1.280482,
 		"Argentina to Angola",
@@ -81,7 +81,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: -90.00, Lon: 0.00}, // South Pole
 		havers2.Coord{Lat: 48.51, Lon: 2.21},  // Paris,  France
-		9568,
+		9570,
 		15401,
 		2.417456,
 		"Penguins to Paris",
@@ -89,7 +89,7 @@ var tests = []struct {
 	{
 		havers2.Coord{Lat: 45.04, Lon: 7.42},  // Turin, Italy
 		havers2.Coord{Lat: 3.09, Lon: 101.42}, // Kuala Lumpur, Malaysia
-		6261,
+		6262,
 		10078,
 		1.581873,
 		"Turin to Malaysia",
