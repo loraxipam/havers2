@@ -5,9 +5,10 @@ import (
 )
 
 const (
-	EarthRadiusMi = 3958.0 // radius of the earth in miles.
+	// 1NM = 1852m exactly
+	EarthRadiusMi = 3958.8 // radius of the earth in miles.
 	EarthRadiusKm = 6371.0 // radius of the earth in kilometers.
-	EarthRadiusNM = 3440.0 // radius of the earth in nautical miles
+	EarthRadiusNM = 3440.1 // radius of the earth in nautical miles
 )
 
 // Coord represents a lat/long geographic coordinate, usually in degrees +EN/-WS.
@@ -48,10 +49,7 @@ func IntAngle(p, q Coord) float64 {
 // Distance calculates the shortest (aka great circle) arc between two coordinates on a sphere
 // of a given radius and returns the resulting great circle arc length
 func Distance(p, q Coord, radius float64) (gc float64) {
-
-	c := IntAngle(p, q)
-
-	return c * radius
+	return IntAngle(p, q) * radius
 }
 
 // DistanceMi calculates the shortest path between two coordinates on the surface
